@@ -1,162 +1,333 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>সংখ্যালঘু অধিকার ও নিরাপত্তা সচেতনতা</title>
-    <style>
-        /* মডার্ন ও রেসপনসিভ ডিজাইন */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        body {
-            background-color: #f7f9fa;
-            color: #333;
-            line-height: 1.7;
-        }
-        header {
-            background: linear-gradient(135deg, #8b0000, #4a0000);
-            color: #fff;
-            padding: 60px 20px;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        header h1 {
-            font-size: 2.3rem;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-        header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        .intro-box {
-            background: #fff;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            border-left: 5px solid #8b0000;
-            margin-bottom: 30px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            text-align: justify;
-        }
-        .section-title {
-            color: #8b0000;
-            margin: 35px 0 20px 0;
-            font-size: 1.6rem;
-            border-bottom: 2px solid #e0e0e0;
-            padding-bottom: 8px;
-        }
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-        .card {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
-            border-top: 3px solid #8b0000;
-        }
-        .card h3 {
-            color: #4a0000;
-            margin-bottom: 10px;
-            font-size: 1.2rem;
-        }
-        ul {
-            margin-left: 20px;
-            margin-bottom: 20px;
-        }
-        ul li {
-            margin-bottom: 10px;
-        }
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-        .footer-note {
-            background: #eef2f3;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 30px;
-            font-size: 0.95rem;
-        }
-        footer {
-            background-color: #1a1a1a;
-            color: #ccc;
-            text-align: center;
-            padding: 25px;
-            margin-top: 60px;
-            font-size: 0.9rem;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>News Channel</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+header{
+    background:#c40000;
+    color:#fff;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+.breaking{
+    background:#ffd000;
+    color:#000;
+    padding:10px;
+    font-weight:bold;
+}
+
+.hero{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:45px;
+}
+
+.hero p{
+    margin-top:10px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:30px 0;
+}
+
+.search{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    margin-bottom:20px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.content{
+    padding:15px;
+}
+
+.content h2{
+    margin-bottom:10px;
+}
+
+.content p{
+    color:#555;
+    margin-bottom:15px;
+}
+
+.btn{
+    background:#c40000;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#900;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+.dark{
+    background:#111;
+    color:white;
+}
+
+.dark .card{
+    background:#222;
+}
+
+.dark .content p{
+    color:#ddd;
+}
+
+.dark footer{
+    background:black;
+}
+</style>
+
 </head>
+
 <body>
 
-    <!-- হেডার সেকশন -->
-    <header>
-        <h1>সংখ্যালঘু অধিকার ও নিরাপত্তা</h1>
-        <p>যেকোনো সমাজ ও রাষ্ট্রে মানবাধিকার সুরক্ষা এবং সচেতনতা তৈরির একটি উদ্যোগ</p>
-    </header>
+<header>
 
-    <div class="container">
-        
-        <!-- ভূমিকা -->
-        <div class="intro-box">
-            সংখ্যালঘু সম্প্রদায়ের ওপর নির্যাতন এবং মানবাধিকার লঙ্ঘন যেকোনো সমাজ ও রাষ্ট্রের জন্য একটি অত্যন্ত উদ্বেগের বিষয়। বাংলাদেশসহ দক্ষিণ এশিয়ার বিভিন্ন দেশে বিভিন্ন সময়ে রাজনৈতিক অস্থিরতা, সামাজিক গুজব এবং সাম্প্রদায়িক উস্কানির কারণে হিন্দু সম্প্রদায়সহ অন্যান্য ধর্মীয় সংখ্যালঘুরা নানা ধরনের সহিংসতা ও বৈষম্যের শিকার হয়ে থাকেন।
-        </div>
+<div class="logo">NEWS CHANNEL</div>
 
-        <!-- সেকশন ১: সহিংসতার ধরন ও কারণ -->
-        <h2 class="section-title">১. সহিংসতার ধরন ও কারণ</h2>
-        <div class="grid-container">
-            <div class="card">
-                <h3>রাজনৈতিক ও সামাজিক অস্থিরতা</h3>
-                <p>দেশের বড় কোনো রাজনৈতিক পরিবর্তন বা নির্বাচনের পরবর্তী সময়ে প্রায়শই সংখ্যালঘু হিন্দু সম্প্রদায়ের বাড়িঘর, ব্যবসা প্রতিষ্ঠান ও উপাসনালয় হামলার লক্ষ্যবস্তু হয়ে থাকে।</p>
-            </div>
-            <div class="card">
-                <h3>গুজব ও সামাজিক যোগাযোগ মাধ্যম</h3>
-                <p>বর্তমান সময়ে ফেসবুক বা অন্যান্য সামাজিক যোগাযোগ মাধ্যমে ধর্মীয় অবমাননার ভুয়া পোস্ট বা গুজব ছড়িয়ে পরিকল্পিতভাবে গণহিংসা উস্কে দেওয়ার প্রবণতা দেখা গেছে।</p>
-            </div>
-            <div class="card">
-                <h3>ভূমি দখল ও व्यक्तिगत বিরোধ</h3>
-                <p>অনেক ক্ষেত্রে ব্যক্তিগত শত্রুতা বা জমিজমা দখলের উদ্দেশ্যকে আড়াল করতে ঘটনাকে সাম্প্রদায়িকতার রূপ দেওয়া হয়।</p>
-            </div>
-        </div>
+<nav>
+<a href="#">Home</a>
+<a href="#">Latest</a>
+<a href="#">Politics</a>
+<a href="#">World</a>
+<a href="#">Sports</a>
+<a href="#">Contact</a>
+</nav>
 
-        <!-- সেকশন ২: আন্তর্জাতিক মানবাধিকার আইন ও রাষ্ট্রীয় দায়বদ্ধতা -->
-        <h2 class="section-title">২. আন্তর্জাতিক মানবাধিকার আইন ও রাষ্ট্রীয় দায়বদ্ধতা</h2>
-        <p>জাতিসংঘের মানবাধিকার কাউন্সিল এবং আন্তর্জাতিক আইন অনুযায়ী প্রতিটি দেশের সরকারের কিছু মৌলিক দায়িত্ব রয়েছে:</p>
-        <ul>
-            <li><strong>নিরাপত্তা নিশ্চিতকরণ:</strong> রাষ্ট্রকে তার সীমানার মধ্যে বসবাসকারী প্রতিটি নাগরিকের—তা সে যেকোনো जाति বা ধর্মেরই হোক না কেন—জীবন ও সম্পদের পূর্ণ নিরাপত্তা দিতে হবে।</li>
-            <li><strong>আইনের শাসন ও বিচার:</strong> যেকোনো ধরনের সাম্প্রদায়িক হামলার সুষ্ঠু তদন্ত নিশ্চিত করে অপরাধীদের দ্রুত আইনের আওতায় আনা জরুরি।</li>
-            <li><strong>ধর্মীয় স্বাধীনতা:</strong> জাতিসংঘের Minorities Declaration (1992) অনুযায়ী, সংখ্যালঘুদের নিজস্ব ধর্ম ও সংস্কৃতি স্বাধীনভাবে চর্চা করার অধিকার রয়েছে।</li>
-        </ul>
+<button class="btn" id="themeBtn">Dark Mode</button>
 
-        <!-- সেকশন ৩: ভুয়া তথ্য ও সচেতনতা -->
-        <h2 class="section-title">৩. ভুয়া তথ্য ও সচেতনতা</h2>
-        <p>সহিংসতার খবরের পাশাপাশি অনেক সময় সামাজিক মাধ্যমে পুরনো বা ভিন্ন প্রেক্ষাপটের ভিডিও ব্যবহার করে ভুয়া তথ্য ও গুজব ছড়ানো হয়, যা উত্তেজনা আরও বাড়িয়ে দেয়। তাই যেকোনো তথ্য বিশ্বাস বা শেয়ার করার আগে মূলধারার নির্ভরযোগ্য সংবাদমাধ্যম বা মানবাধিকার সংস্থাগুলোর যাচাইকৃত প্রতিবেদন অনুসরণ করা উচিত।</p>
+</header>
 
-        <!-- শেষ কথা -->
-        <div class="footer-note">
-            <strong>উপসংহার:</strong> একটি প্রগতিশীল ও শান্তিময় সমাজ গঠনে প্রতিটি নাগরিকের পারস্পরিক সৌহার্দ্য বজায় রাখা এবং যেকোনো ধরনের বৈষম্য ও অন্যায়ের বিরুদ্ধে সোচ্চার হওয়া প্রয়োজন।
-        </div>
+<div class="breaking">
+<span id="ticker">Breaking News...</span>
+</div>
 
-    </div>
+<section class="hero">
 
-    <!-- ফুটার -->
-    <footer>
-        <p>&copy; 2026 সংখ্যালঘু অধিকার ও মানবাধিকার সচেতনতা ফোরাম। সর্বস্বত্ব সংরক্ষিত।</p>
-    </footer>
+<h1>Welcome To News Channel</h1>
+
+<p>Latest News • Reports • Analysis</p>
+
+</section>
+
+<div class="container">
+
+<input
+type="text"
+id="search"
+class="search"
+placeholder="Search News...">
+
+<div class="grid">
+
+<div class="card">
+
+<img src="https://picsum.photos/600/400?1">
+
+<div class="content">
+
+<h2>Top Headline</h2>
+
+<p>
+এখানে আপনার প্রধান সংবাদের সংক্ষিপ্ত বিবরণ লিখুন।
+</p>
+
+<button class="btn">Read More</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://picsum.photos/600/400?2">
+
+<div class="content">
+
+<h2>World News</h2>
+
+<p>
+আন্তর্জাতিক সংবাদের ছোট বিবরণ এখানে লিখুন।
+</p>
+
+<button class="btn">Read More</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://picsum.photos/600/400?3">
+
+<div class="content">
+
+<h2>Special Report</h2>
+
+<p>
+বিশেষ প্রতিবেদন বা বিশ্লেষণ এখানে যোগ করুন।
+</p>
+
+<button class="btn">Read More</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<h3>News Channel</h3>
+
+<p>© 2026 All Rights Reserved</p>
+
+</footer>
+
+<script>
+
+// Dark Mode
+
+document.getElementById("themeBtn").onclick=function(){
+
+document.body.classList.toggle("dark");
+
+}
+
+// Breaking News
+
+const headlines=[
+
+"📰 Breaking: নতুন প্রতিবেদন প্রকাশিত হয়েছে",
+
+"🌍 আন্তর্জাতিক আপডেট",
+
+"📢 সর্বশেষ সংবাদ এখন পড়ুন",
+
+"⚡ বিশেষ খবর আপডেট হয়েছে"
+
+];
+
+let index=0;
+
+setInterval(function(){
+
+document.getElementById("ticker").innerText=headlines[index];
+
+index++;
+
+if(index>=headlines.length){
+
+index=0;
+
+}
+
+},3000);
+
+// Search
+
+document.getElementById("search").addEventListener("keyup",function(){
+
+let value=this.value.toLowerCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+if(card.innerText.toLowerCase().includes(value)){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+});
+
+});
+
+</script>
 
 </body>
 </html>
