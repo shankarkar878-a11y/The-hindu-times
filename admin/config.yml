@@ -1,1 +1,20 @@
 
+backend:
+  name: github
+  repo:
+
+media_folder: "images" 
+public_folder: "/images"
+
+collections:
+  - name: "blog"
+    label: "Posts"
+    folder: "posts" 
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Upload Video", name: "video", widget: "file", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
