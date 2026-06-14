@@ -1,10 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="bn">
 <head>
-    <title>আমার প্রথম ওয়েবসাইট</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>প্রফেশনাল ওয়েবসাইট</title>
+    <style>
+        /* সম্পূর্ণ ওয়েবসাইটের মডার্ন ডিজাইন (CSS) */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        nav {
+            background-color: #ffffff;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: #1e3c72;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ff6b6b;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            border-top: 4px solid #1e3c72;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            color: #1e3c72;
+            margin-bottom: 12px;
+        }
+        .cta-btn {
+            display: inline-block;
+            background-color: #ff6b6b;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 25px;
+            box-shadow: 0 4px 10px rgba(255, 107, 107, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+        .cta-btn:hover {
+            background-color: #e55b5b;
+        }
+        footer {
+            background-color: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>হ্যালো ওয়ার্ল্ড!</h1>
-    <p>আমার ওয়েবসাইটটি গিটহাব পেজেস দিয়ে লাইভ হয়েছে।</p>
+
+    <!-- নেভিগেশন বার -->
+    <nav>
+        <a href="#home">হোম</a>
+        <a href="#services">সার্ভিস</a>
+        <a href="#about">আমাদের সম্পর্কে</a>
+        <a href="#contact">যোগাযোগ</a>
+    </nav>
+
+    <!-- হেডার সেকশন -->
+    <header id="home">
+        <h1>স্বাগতম আমাদের প্রফেশনাল ওয়েবসাইটে</h1>
+        <p>আমরা আপনার ব্যবসাকে অনলাইনে সফল করতে আধুনিক ওয়েব সমাধান দিয়ে থাকি।</p>
+        <button class="cta-btn" onclick="welcomeAlert()">শুরু করুন</button>
+    </header>
+
+    <!-- মূল কন্টেন্ট সেকশন -->
+    <div class="container">
+        
+        <!-- সার্ভিস সেকশন -->
+        <section id="services" style="margin-bottom: 50px;">
+            <h2 style="text-align: center; color: #1e3c72;">আমাদের সেবাসমূহ</h2>
+            <div class="services">
+                <div class="card">
+                    <h3>ওয়েব ডিজাইন</h3>
+                    <p>আধুনিক, রেসপনসিভ এবং দৃষ্টিনন্দন ওয়েবসাইট তৈরি যা সব ডিভাইসে পারফেক্ট দেখাবে।</p>
+                </div>
+                <div class="card">
+                    <h3>এসইও (SEO)</h3>
+                    <p>আপনার ওয়েবসাইটকে গুগলের সার্চ রেজাল্টের সবার উপরে নিয়ে আসার কার্যকরী ব্যবস্থা।</p>
+                </div>
+                <div class="card">
+                    <h3>ডিজিটাল মার্কেটিং</h3>
+                    <p>সঠিক কাস্টমারের কাছে আপনার ব্র্যান্ড বা সার্ভিসকে পৌঁছে দেওয়ার প্রফেশনাল কৌশল।</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- আমাদের সম্পর্কে সেকশন -->
+        <section id="about" style="background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+            <h2 style="color: #1e3c72; margin-bottom: 15px;">আমাদের লক্ষ্য</h2>
+            <p>আমরা বিশ্বাস করি প্রতিটি ব্যবসার একটি চমৎকার অনলাইন উপস্থিতি থাকা উচিত। আমাদের অভিজ্ঞ টিম আপনার আইডিয়াকে বাস্তবে রূপ দিতে এবং ব্যবসার দ্রুত প্রবৃদ্ধি নিশ্চিত করতে ২৪/৭ কাজ করে যাচ্ছে।</p>
+        </section>
+
+    </div>
+
+    <!-- ফুটার সেকশন -->
+    <footer>
+        <p>&copy; 2026 আপনার কোম্পানির নাম। সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
+    <!-- ইন্টারঅ্যাক্টিভ ফিচার (JavaScript) -->
+    <script>
+        function welcomeAlert() {
+            alert('আমাদের প্রফেশনাল ওয়েবসাইটে আপনাকে স্বাগতম! আপনার প্রজেক্ট নিয়ে কথা বলতে যোগাযোগ করুন।');
+        }
+    </script>
+
 </body>
 </html>
