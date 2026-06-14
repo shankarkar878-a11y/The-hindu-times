@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>প্রফেশনাল ওয়েবসাইট</title>
+    <title>সংখ্যালঘু অধিকার ও নিরাপত্তা সচেতনতা</title>
     <style>
-        /* সম্পূর্ণ ওয়েবসাইটের মডার্ন ডিজাইন (CSS) */
+        /* মডার্ন ও রেসপনসিভ ডিজাইন */
         * {
             margin: 0;
             padding: 0;
@@ -13,92 +13,89 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
-            background-color: #f4f7f6;
+            background-color: #f7f9fa;
             color: #333;
-            line-height: 1.6;
+            line-height: 1.7;
         }
         header {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            background: linear-gradient(135deg, #8b0000, #4a0000);
             color: #fff;
-            padding: 80px 20px;
+            padding: 60px 20px;
             text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
         header h1 {
-            font-size: 2.5rem;
+            font-size: 2.3rem;
             margin-bottom: 10px;
+            font-weight: 700;
         }
         header p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             opacity: 0.9;
         }
-        nav {
-            background-color: #ffffff;
-            padding: 15px;
-            display: flex;
-            justify-content: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        nav a {
-            color: #1e3c72;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #ff6b6b;
-        }
         .container {
-            max-width: 1000px;
+            max-width: 900px;
             margin: 40px auto;
             padding: 0 20px;
         }
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-        .card {
+        .intro-box {
             background: #fff;
             padding: 25px;
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            text-align: center;
-            border-top: 4px solid #1e3c72;
-            transition: transform 0.3s;
+            border-left: 5px solid #8b0000;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-align: justify;
         }
-        .card:hover {
-            transform: translateY(-5px);
+        .section-title {
+            color: #8b0000;
+            margin: 35px 0 20px 0;
+            font-size: 1.6rem;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 8px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+            border-top: 3px solid #8b0000;
         }
         .card h3 {
-            color: #1e3c72;
-            margin-bottom: 12px;
+            color: #4a0000;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
         }
-        .cta-btn {
-            display: inline-block;
-            background-color: #ff6b6b;
-            color: white;
-            padding: 12px 30px;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            margin-top: 25px;
-            box-shadow: 0 4px 10px rgba(255, 107, 107, 0.3);
-            border: none;
-            cursor: pointer;
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
         }
-        .cta-btn:hover {
-            background-color: #e55b5b;
+        ul li {
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .footer-note {
+            background: #eef2f3;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            font-size: 0.95rem;
         }
         footer {
-            background-color: #111;
-            color: #aaa;
+            background-color: #1a1a1a;
+            color: #ccc;
             text-align: center;
-            padding: 20px;
+            padding: 25px;
             margin-top: 60px;
             font-size: 0.9rem;
         }
@@ -106,62 +103,60 @@
 </head>
 <body>
 
-    <!-- নেভিগেশন বার -->
-    <nav>
-        <a href="#home">হোম</a>
-        <a href="#services">সার্ভিস</a>
-        <a href="#about">আমাদের সম্পর্কে</a>
-        <a href="#contact">যোগাযোগ</a>
-    </nav>
-
     <!-- হেডার সেকশন -->
-    <header id="home">
-        <h1>স্বাগতম আমাদের প্রফেশনাল ওয়েবসাইটে</h1>
-        <p>আমরা আপনার ব্যবসাকে অনলাইনে সফল করতে আধুনিক ওয়েব সমাধান দিয়ে থাকি।</p>
-        <button class="cta-btn" onclick="welcomeAlert()">শুরু করুন</button>
+    <header>
+        <h1>সংখ্যালঘু অধিকার ও নিরাপত্তা</h1>
+        <p>যেকোনো সমাজ ও রাষ্ট্রে মানবাধিকার সুরক্ষা এবং সচেতনতা তৈরির একটি উদ্যোগ</p>
     </header>
 
-    <!-- মূল কন্টেন্ট সেকশন -->
     <div class="container">
         
-        <!-- সার্ভিস সেকশন -->
-        <section id="services" style="margin-bottom: 50px;">
-            <h2 style="text-align: center; color: #1e3c72;">আমাদের সেবাসমূহ</h2>
-            <div class="services">
-                <div class="card">
-                    <h3>ওয়েব ডিজাইন</h3>
-                    <p>আধুনিক, রেসপনসিভ এবং দৃষ্টিনন্দন ওয়েবসাইট তৈরি যা সব ডিভাইসে পারফেক্ট দেখাবে।</p>
-                </div>
-                <div class="card">
-                    <h3>এসইও (SEO)</h3>
-                    <p>আপনার ওয়েবসাইটকে গুগলের সার্চ রেজাল্টের সবার উপরে নিয়ে আসার কার্যকরী ব্যবস্থা।</p>
-                </div>
-                <div class="card">
-                    <h3>ডিজিটাল মার্কেটিং</h3>
-                    <p>সঠিক কাস্টমারের কাছে আপনার ব্র্যান্ড বা সার্ভিসকে পৌঁছে দেওয়ার প্রফেশনাল কৌশল।</p>
-                </div>
-            </div>
-        </section>
+        <!-- ভূমিকা -->
+        <div class="intro-box">
+            সংখ্যালঘু সম্প্রদায়ের ওপর নির্যাতন এবং মানবাধিকার লঙ্ঘন যেকোনো সমাজ ও রাষ্ট্রের জন্য একটি অত্যন্ত উদ্বেগের বিষয়। বাংলাদেশসহ দক্ষিণ এশিয়ার বিভিন্ন দেশে বিভিন্ন সময়ে রাজনৈতিক অস্থিরতা, সামাজিক গুজব এবং সাম্প্রদায়িক উস্কানির কারণে হিন্দু সম্প্রদায়সহ অন্যান্য ধর্মীয় সংখ্যালঘুরা নানা ধরনের সহিংসতা ও বৈষম্যের শিকার হয়ে থাকেন।
+        </div>
 
-        <!-- আমাদের সম্পর্কে সেকশন -->
-        <section id="about" style="background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-            <h2 style="color: #1e3c72; margin-bottom: 15px;">আমাদের লক্ষ্য</h2>
-            <p>আমরা বিশ্বাস করি প্রতিটি ব্যবসার একটি চমৎকার অনলাইন উপস্থিতি থাকা উচিত। আমাদের অভিজ্ঞ টিম আপনার আইডিয়াকে বাস্তবে রূপ দিতে এবং ব্যবসার দ্রুত প্রবৃদ্ধি নিশ্চিত করতে ২৪/৭ কাজ করে যাচ্ছে।</p>
-        </section>
+        <!-- সেকশন ১: সহিংসতার ধরন ও কারণ -->
+        <h2 class="section-title">১. সহিংসতার ধরন ও কারণ</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>রাজনৈতিক ও সামাজিক অস্থিরতা</h3>
+                <p>দেশের বড় কোনো রাজনৈতিক পরিবর্তন বা নির্বাচনের পরবর্তী সময়ে প্রায়শই সংখ্যালঘু হিন্দু সম্প্রদায়ের বাড়িঘর, ব্যবসা প্রতিষ্ঠান ও উপাসনালয় হামলার লক্ষ্যবস্তু হয়ে থাকে।</p>
+            </div>
+            <div class="card">
+                <h3>গুজব ও সামাজিক যোগাযোগ মাধ্যম</h3>
+                <p>বর্তমান সময়ে ফেসবুক বা অন্যান্য সামাজিক যোগাযোগ মাধ্যমে ধর্মীয় অবমাননার ভুয়া পোস্ট বা গুজব ছড়িয়ে পরিকল্পিতভাবে গণহিংসা উস্কে দেওয়ার প্রবণতা দেখা গেছে।</p>
+            </div>
+            <div class="card">
+                <h3>ভূমি দখল ও व्यक्तिगत বিরোধ</h3>
+                <p>অনেক ক্ষেত্রে ব্যক্তিগত শত্রুতা বা জমিজমা দখলের উদ্দেশ্যকে আড়াল করতে ঘটনাকে সাম্প্রদায়িকতার রূপ দেওয়া হয়।</p>
+            </div>
+        </div>
+
+        <!-- সেকশন ২: আন্তর্জাতিক মানবাধিকার আইন ও রাষ্ট্রীয় দায়বদ্ধতা -->
+        <h2 class="section-title">২. আন্তর্জাতিক মানবাধিকার আইন ও রাষ্ট্রীয় দায়বদ্ধতা</h2>
+        <p>জাতিসংঘের মানবাধিকার কাউন্সিল এবং আন্তর্জাতিক আইন অনুযায়ী প্রতিটি দেশের সরকারের কিছু মৌলিক দায়িত্ব রয়েছে:</p>
+        <ul>
+            <li><strong>নিরাপত্তা নিশ্চিতকরণ:</strong> রাষ্ট্রকে তার সীমানার মধ্যে বসবাসকারী প্রতিটি নাগরিকের—তা সে যেকোনো जाति বা ধর্মেরই হোক না কেন—জীবন ও সম্পদের পূর্ণ নিরাপত্তা দিতে হবে।</li>
+            <li><strong>আইনের শাসন ও বিচার:</strong> যেকোনো ধরনের সাম্প্রদায়িক হামলার সুষ্ঠু তদন্ত নিশ্চিত করে অপরাধীদের দ্রুত আইনের আওতায় আনা জরুরি।</li>
+            <li><strong>ধর্মীয় স্বাধীনতা:</strong> জাতিসংঘের Minorities Declaration (1992) অনুযায়ী, সংখ্যালঘুদের নিজস্ব ধর্ম ও সংস্কৃতি স্বাধীনভাবে চর্চা করার অধিকার রয়েছে।</li>
+        </ul>
+
+        <!-- সেকশন ৩: ভুয়া তথ্য ও সচেতনতা -->
+        <h2 class="section-title">৩. ভুয়া তথ্য ও সচেতনতা</h2>
+        <p>সহিংসতার খবরের পাশাপাশি অনেক সময় সামাজিক মাধ্যমে পুরনো বা ভিন্ন প্রেক্ষাপটের ভিডিও ব্যবহার করে ভুয়া তথ্য ও গুজব ছড়ানো হয়, যা উত্তেজনা আরও বাড়িয়ে দেয়। তাই যেকোনো তথ্য বিশ্বাস বা শেয়ার করার আগে মূলধারার নির্ভরযোগ্য সংবাদমাধ্যম বা মানবাধিকার সংস্থাগুলোর যাচাইকৃত প্রতিবেদন অনুসরণ করা উচিত।</p>
+
+        <!-- শেষ কথা -->
+        <div class="footer-note">
+            <strong>উপসংহার:</strong> একটি প্রগতিশীল ও শান্তিময় সমাজ গঠনে প্রতিটি নাগরিকের পারস্পরিক সৌহার্দ্য বজায় রাখা এবং যেকোনো ধরনের বৈষম্য ও অন্যায়ের বিরুদ্ধে সোচ্চার হওয়া প্রয়োজন।
+        </div>
 
     </div>
 
-    <!-- ফুটার সেকশন -->
+    <!-- ফুটার -->
     <footer>
-        <p>&copy; 2026 আপনার কোম্পানির নাম। সর্বস্বত্ব সংরক্ষিত।</p>
+        <p>&copy; 2026 সংখ্যালঘু অধিকার ও মানবাধিকার সচেতনতা ফোরাম। সর্বস্বত্ব সংরক্ষিত।</p>
     </footer>
-
-    <!-- ইন্টারঅ্যাক্টিভ ফিচার (JavaScript) -->
-    <script>
-        function welcomeAlert() {
-            alert('আমাদের প্রফেশনাল ওয়েবসাইটে আপনাকে স্বাগতম! আপনার প্রজেক্ট নিয়ে কথা বলতে যোগাযোগ করুন।');
-        }
-    </script>
 
 </body>
 </html>
