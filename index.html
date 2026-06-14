@@ -318,6 +318,17 @@ if(card.innerText.toLowerCase().includes(value)){
 card.style.display="block";
 
 }else{
+/* লোগোর সাইজ এবং পজিশন ঠিক করার জন্য */
+.logo-container {
+    text-align: center; /* লোগোটি মাঝখানে রাখার জন্য */
+    padding: 15px 0;
+}
+
+.web-logo {
+    max-width: 250px; /* লোগোটির চওড়া কতটুকু হবে তা এখান থেকে নিয়ন্ত্রণ করুন */
+    height: auto;     /* লোগোর অনুপাত ঠিক রাখবে */
+    display: inline-block;
+}
 
 card.style.display="none";
 
