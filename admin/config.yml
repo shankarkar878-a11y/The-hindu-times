@@ -1,7 +1,7 @@
 
 backend:
   name: github
-  repo:
+  repo:shankarkar878-a11y/The-hindu-times
 
 media_folder: "images" 
 public_folder: "/images"
